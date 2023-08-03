@@ -15,6 +15,7 @@ import os
 import environ
 from decouple import config
 from dj_database_url import parse as dburl
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -82,14 +83,7 @@ WSGI_APPLICATION = "render_test.wsgi.application"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default':{
-        'ENGINE':'django.db.backends.postgresql_psycopg2',
-        'NAME':'testDB',
-        'USER':'postgres',
-        'PASSWORD':'DBmaster',
-        'HOST':'localhost',
-        'PORT':'5432',
-    }
+    "default": dj_database_url.config(),
 }
 
 
