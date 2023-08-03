@@ -3,5 +3,7 @@ Django==4.2.4
 django_environ==0.10.0
 environ==1.0
 python-decouple==3.8
-whitenoise
-gunicorn
+gensim==4.1.2
+psycopg2==2.9.6
+whitenoise==6.5.0
+gunicorn==21.2.0
