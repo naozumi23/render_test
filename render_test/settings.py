@@ -32,7 +32,7 @@ SECRET_KEY = "django-insecure-3*qt=)uq30=lz(00mhzjhkoaa&h)c$&#+mcv)9)d2t&up7h1#9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'zumi_render_test.onrender.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'zumi_render_test.onrender.com', 'render-test-p57v.onrender.com']
 
 
 # Application definition
